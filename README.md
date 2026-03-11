@@ -1,5 +1,6 @@
-## CS244c Final Project
-### Reducing Unavailability of Geo-replicated Raft with Automatic Election Timeout Configuration
+# CS244c Final Project
+
+## Setup
 
 
 

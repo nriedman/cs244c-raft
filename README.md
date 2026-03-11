@@ -18,7 +18,7 @@ Once the container is active, you can build the example application as follows:
 ```
 go build -o raftexample ./raftexample
 ```
-See the [original project setup](https://docs.docker.com/desktop/?_gl=1*1svchvc*_gcl_au*MjI5NjYzODg2LjE3NzMyMTg5Njk.*_ga*MTcyODEzMjM2LjE3NzMyMTg5Njk.*_ga_XJWPQMJYHQ*czE3NzMyMTg5NjkkbzEkZzEkdDE3NzMyMTg5NzMkajU2JGwwJGgw) instructions for an example of how to run a single node or a cluster.
+See the [original project setup](https://github.com/etcd-io/etcd/tree/main/contrib/raftexample) instructions for an example of how to run a single node or a cluster.
 
 
 ## Acknowledgements

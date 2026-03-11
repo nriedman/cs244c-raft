@@ -1,0 +1,14 @@
+# Binaries
+raftexample/raftexample
+
+# Raft logs and snapshots
+raftexample/raftexample-*
+raftexample/raftexample-*-snap
+
+# OS specific
+.DS_Store
+
+# IDEs
+.vscode/
+*.swp
+*.swo

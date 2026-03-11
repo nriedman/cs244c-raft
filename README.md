@@ -20,6 +20,23 @@ go build -o raftexample ./raftexample
 ```
 See the [original project setup](https://docs.docker.com/desktop/?_gl=1*1svchvc*_gcl_au*MjI5NjYzODg2LjE3NzMyMTg5Njk.*_ga*MTcyODEzMjM2LjE3NzMyMTg5Njk.*_ga_XJWPQMJYHQ*czE3NzMyMTg5NjkkbzEkZzEkdDE3NzMyMTg5NzMkajU2JGwwJGgw) instructions for an example of how to run a single node or a cluster.
 
+## Network Layer
+
+To initialize network (e.g. with 3 nodes):
+```
+cd network
+sudo ./setup_raft_net.sh 3
+```
+
+If there is an issue with permissions for network setup, run:
+```
+chmod +x setup_network.sh
+```
+
+to add latency (e.g. 100ms from node 1 to node 2):
+```
+sudo ./setup_raft_net.sh 3 delay 1 2 100
+```
 
 ## Acknowledgements
 

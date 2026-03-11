@@ -53,8 +53,8 @@ setup() {
         ip -n $NS link set lo up
         ip link set $VETH_BR up
 
-        # Initialize traffic control hierarchy
-        # Create a root hierarchical token bucket
+        # Initialize traffic control (tc) hierarchy
+        # Create a root hierarchical token bucket (htb)
         # Handle 1: is the root. Default traffic goes to class 1:1 (no delay)
         ip netns exec $NS tc qdisc add dev $VETH_NS root handle 1: htb default 1
         ip netns exec $NS tc class add dev $VETH_NS parent 1: classid 1:1 htb rate 1gbit
